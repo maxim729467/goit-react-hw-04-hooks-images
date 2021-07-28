@@ -33,7 +33,7 @@ function App() {
     }
 
     if (page === 1) {
-      resetImages();
+      setImages([]);
     }
 
     setLoader(true);
@@ -69,10 +69,6 @@ function App() {
 
     setTopic(val.toLowerCase());
     setPage(1);
-  };
-
-  const resetImages = () => {
-    setImages([]);
   };
 
   const onImgClick = (id) => {
